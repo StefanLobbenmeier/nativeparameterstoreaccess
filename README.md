@@ -47,7 +47,7 @@ fun isSystemInDarkTheme(): Boolean = when {
     }
     HAS_DCONF -> {
         val result = Dconf.getDconfEntry("/org/gnome/desktop/interface/gtk-theme")
-        result.toLowerCase().contains("dark")
+        result.lowercase().contains("dark")
     }
     else -> false
 }
