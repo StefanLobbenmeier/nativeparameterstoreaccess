@@ -25,6 +25,7 @@ package com.github.tkuenneth.nativeparameterstoreaccess;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Locale;
 
 /**
  * A couple of constants.
@@ -33,7 +34,7 @@ import java.io.InputStream;
  */
 public final class NativeParameterStoreAccess {
 
-    static final String OS_NAME_LC = System.getProperty("os.name", "").toLowerCase();
+    static final String OS_NAME_LC = System.getProperty("os.name", "").toLowerCase(Locale.ROOT);
 
     /**
      * If running on Windows, <code>true</code> otherwise <code>false</code>
